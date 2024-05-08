@@ -66,7 +66,7 @@ if st.session_state.page == 'Form':
       age = st.number_input("Age", min_value=0, max_value=120, value="min")
 
       time = st.time_input(
-         "Choose time", value=None, step=60)
+         "Choose time", value="now", step=60)
 
       date = st.date_input("Choose date", value="default_value_today", format="YYYY/MM/DD")
 
