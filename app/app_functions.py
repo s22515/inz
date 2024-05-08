@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder,  MinMaxScaler
 from xgboost import XGBClassifier
 import datetime
-joblib
+import joblib
 
 
 def load_label_encoder() -> LabelEncoder:
