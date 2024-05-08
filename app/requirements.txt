@@ -1,6 +1,6 @@
 streamlit~=1.34.0
-pickle5<4.0
+joblib~=1.4.0
 numpy~=1.26.4
 scikit-learn~=1.4.2
 xgboost~=2.0.3
-blosc~=1.11.1
+
