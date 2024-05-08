@@ -7,22 +7,22 @@ import joblib
 
 
 def load_label_encoder() -> LabelEncoder:
-    with open('inz/models/label_encoder.pkl','rb') as f:
+    with open('models/label_encoder.pkl','rb') as f:
         label_encoder = joblib.load(f)
     return label_encoder
 
 def load_one_hot_encoder() -> OneHotEncoder:
-    with open('inz/models/one_hot_encoder.pkl','rb') as f:
+    with open('models/one_hot_encoder.pkl','rb') as f:
         one_hot_encoder = joblib.load(f)
     return one_hot_encoder
 
 def load_min_max_scaler() -> MinMaxScaler:
-    with open('inz/models/min_max_scaler.pkl','rb') as f:
+    with open('models/min_max_scaler.pkl','rb') as f:
         min_max_scaler = pjoblib.load(f)
     return min_max_scaler
 
 def load_xgb_model() -> XGBClassifier:
-    with open('inz/models/xgb_model_compressedt.pkl','rb') as f:
+    with open('models/xgb_model_compressedt.pkl','rb') as f:
         xgb_model = joblib.load(f)
     return xgb_model
 
