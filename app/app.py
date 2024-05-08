@@ -50,14 +50,14 @@ if 'page' not in st.session_state:
 if st.session_state.page == 'Form':
    with form.container():
       gender = st.selectbox(
-         "Choose your gender",
+         "Choose gender",
          gender_list,
          index=0,
          placeholder="Indeterminate",
       )
 
       descent = st.selectbox(
-         "Choose descent",
+         "Choose ethnicity descent: W - White, H - Hispanic and Latino, B - Black, A - Asian",
          descent_list,
          index=0,
          placeholder="Indeterminate",
@@ -78,14 +78,14 @@ if st.session_state.page == 'Form':
       )
 
       geo_LAT = st.number_input(
-         f"type latitiude beetwen {geo_coordinates_dict[area][0]} and {geo_coordinates_dict[area][1]}",
+         f"Type latitiude beetwen {geo_coordinates_dict[area][0]} and {geo_coordinates_dict[area][1]}",
          max_value=geo_coordinates_dict[area][0],
          min_value=geo_coordinates_dict[area][1],
          step=0.001,
          format="%.4f")
 
       geo_LON = st.number_input(
-         f"type latitiude beetwen {geo_coordinates_dict[area][2]} and {geo_coordinates_dict[area][3]}",
+         f"Type latitiude beetwen {geo_coordinates_dict[area][2]} and {geo_coordinates_dict[area][3]}",
          max_value=geo_coordinates_dict[area][2],
          min_value=geo_coordinates_dict[area][3],
          step=0.001,
