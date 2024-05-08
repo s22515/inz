@@ -18,7 +18,7 @@ def load_one_hot_encoder() -> OneHotEncoder:
 
 def load_min_max_scaler() -> MinMaxScaler:
     with open('models/min_max_scaler.pkl','rb') as f:
-        min_max_scaler = pjoblib.load(f)
+        min_max_scaler = joblib.load(f)
     return min_max_scaler
 
 def load_xgb_model() -> XGBClassifier:
