@@ -78,14 +78,14 @@ if st.session_state.page == 'Form':
       )
 
       geo_LAT = st.number_input(
-         f"Type latitiude beetwen {geo_coordinates_dict[area][0]} and {geo_coordinates_dict[area][1]}",
+         f"Type latitiude between {geo_coordinates_dict[area][0]} and {geo_coordinates_dict[area][1]}",
          max_value=geo_coordinates_dict[area][0],
          min_value=geo_coordinates_dict[area][1],
          step=0.001,
          format="%.4f")
 
       geo_LON = st.number_input(
-         f"Type latitiude beetwen {geo_coordinates_dict[area][2]} and {geo_coordinates_dict[area][3]}",
+         f"Type latitiude between {geo_coordinates_dict[area][2]} and {geo_coordinates_dict[area][3]}",
          max_value=geo_coordinates_dict[area][2],
          min_value=geo_coordinates_dict[area][3],
          step=0.001,
