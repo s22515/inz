@@ -63,7 +63,7 @@ if st.session_state.page == 'Form':
          placeholder="Indeterminate",
       )
 
-      age = st.number_input("Age", min_value=0, max_value=120, value="min")
+      age = st.number_input("Age", min_value=0, max_value=120, value=20)
 
       time = st.time_input(
          "Choose time", value="now", step=60)
